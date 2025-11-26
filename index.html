@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Protótipo Batalha Naval</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Protótipo Batalha Naval</h1>
+
+  <div id="menu">
+    <p>Versão protótipo (local / GitHub Pages).</p>
+    <button id="btnStart">Iniciar partida local</button>
+    <p id="info"></p>
+  </div>
+
+  <div id="game" class="hidden">
+    <p>Você posiciona seus navios e atira no “inimigo CPU”.</p>
+
+    <div class="boards">
+      <div>
+        <h2>Seu tabuleiro</h2>
+        <div id="myBoard" class="board"></div>
+      </div>
+      <div>
+        <h2>Tabuleiro inimigo</h2>
+        <div id="enemyBoard" class="board"></div>
+      </div>
+    </div>
+
+    <button id="btnReady">Estou pronto</button>
+    <p id="turnInfo"></p>
+  </div>
+
+  <div id="explosion-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
